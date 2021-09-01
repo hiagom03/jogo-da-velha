@@ -1,0 +1,102 @@
+/* para chamar ID é #nome_do_id */
+/* para chamar Class é .nome_do_class */
+/* para chamar Tag é pelo nome da Tag */
+
+h1{
+    width: 510px;
+    text-align: center;
+    background-color: #c8c8c8;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    border-radius: 10px;    
+}
+
+.botao{
+    display: grid;
+    width: 500px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+}
+
+.button{
+    font-size: 19px;
+    font-weight: bold;
+    padding: 8px;
+    width: 60px;
+    text-align: center;
+    background-color: #c8c8c8;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 10px;
+
+    transition: transform 0.3s, filter 0.3s;
+}
+.button:hover{
+    cursor: pointer;
+    filter:brightness(1.08);
+}
+.button:active{
+    transform: scale(1.03);
+    filter:brightness(1);
+}
+
+.game{
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: #34495e;
+    color: #fff;
+    border: 6px solid #2c3e50;
+    border-radius: 10px;
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+}
+
+.game > div{
+    border: 6px solid #2c3e50;
+    border-radius: 1px;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pontos{
+    width: 500px;
+    height: 125px;
+    margin: 0 auto;
+    background-color: #054c4e;
+    border: 6px solid #2c3e50;
+    display: grid;
+    border-radius: 10px;
+    margin-top: 30px;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);    
+}
+
+.pontos > div{
+    border-radius: 1px;
+    background-color: #09878b;
+    height: 50px;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border: 6px solid #054c4e;
+    border-radius: 10px;
+
+}
+
+.pontos > div.plac {
+    font-size: 1.5em;
+}
+
+#win{
+    background-color: #47b2b6;
+}

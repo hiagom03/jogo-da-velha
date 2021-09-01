@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <h1>Jogo da Velha</h1>
+    
+    <div class="game"></div>
+
+    <div class="pontos"></div>
+    
+    <div class="botao">
+    <div class="button" onclick="tic_tac_toe.start_game ()">Restart</div>
+    <div class="button" onclick="tic_tac_toe.zerarPlacar ()">Zerar</div>
+    </div>
+
+    <script src="js/tic-tac-toe.js"></script>
+
+    <script>
+        // passar por parâmetro a div game, para dentro do objeto tic_tac_toe
+        tic_tac_toe.init (document.querySelector('.game'));
+
+        //desenha o tabuleiro
+        tic_tac_toe.start_game ();
+
+        //mostra o placar
+        tic_tac_toe.contaPlacar('');
+    </script>
+</body>
+</html>
